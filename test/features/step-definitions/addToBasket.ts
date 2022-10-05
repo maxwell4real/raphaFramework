@@ -11,8 +11,8 @@ Given(/^I scroll down to the buttom of the page$/, async function() {
    await productpage.scrollToBottom();
 });
 
-Given(/^I choose product colour$/, async function() {
-   await productpage.selectColour(1);
+Given(/^I choose product colour "([^"]*)"$/, async function(value) {
+    await productpage.selectColour(value);
 });
 
 Given(/^I select product size "([^"]*)"$/, async function (value) {

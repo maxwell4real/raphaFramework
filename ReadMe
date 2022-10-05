@@ -1,0 +1,11 @@
+*** Getting started ***
+
+To get the node_modules
+ npm install
+
+To Run the test
+ npm run test
+
+To Generate reports
+ npm run report
+

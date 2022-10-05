@@ -1,17 +1,5 @@
 class ProductPageClass {
 
-    get enterUsername(){
-        return $ ('#username');
-    }
-
-    get enterPassword(){
-        return $('#password');
-    }
-
-    get loginBtn(){
-        return $('button[type="submit"]')
-    }
-
     get addToBasketBtn(){
         return $(`//button[@class='scroll-target optionitem purchase action sc-caSCKo czoaii sc-kAzzGY kiHYeC']`);
     }
@@ -28,8 +16,8 @@ class ProductPageClass {
         return $(`input[value='Go To Basket']`);
     }
 
-    async selectColour(index = 1){
-       await  (await $(`//div[@class='sc-hzDkRC hZoVsb']//label[${index}]`)).click();
+    async selectColour(value){
+        await  (await $(`//div[@class='sc-hzDkRC hZoVsb']//label[${value}]`)).click();
     }
 
     async selectSize(value){
